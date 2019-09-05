@@ -16,6 +16,7 @@
   &__input
     width: 100%
     max-width: 370px
+    margin: auto
     margin-bottom: 7px
     margin-top: 7px
   &__button
@@ -23,8 +24,10 @@
     height: 70px
     width: 100%
     max-width: 370px
+    margin: auto
     margin-top: 15px
     margin-bottom: 30px
+
 
 .interview
   padding-right: 50px 
@@ -57,6 +60,7 @@
       font-size: 14px
     &__text
       max-width: 400px
+      width: 70%
 
 .form
   &__title
@@ -77,6 +81,7 @@
   .brif
     &__form
       padding-left: 30px
+      padding-right: 30px
     &__interview
   .interview
     padding-right: 30px
@@ -87,7 +92,7 @@
       margin-bottom: 30px
     &-list
       &__text
-        font-size: 14pxs
+        font-size: 14px
         max-width: 300px
       &__counter
         margin-right: 20px
@@ -98,11 +103,15 @@
     &__subtitle
       margin-bottom: 30px
 
+@media (max-width: 900px)
+  .brif
+    background-size: 50%, cover
+
 @media (max-width: 768px)
   .brif
     background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg")
     background-position: top center, center bottom
-    background-size: 100% 50%, cover
+    background-size: 100% 47%, cover
     background-repeat:  repeat-x, no-repeat
     &-block
       flex-direction: column

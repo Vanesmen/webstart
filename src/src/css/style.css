@@ -69,17 +69,11 @@ img {
 
 .success {
   text-align: center;
-  padding: 10px 0;
+  padding-top: 20px;
 }
 
 .arrows__left:hover, .arrows__right:hover {
   cursor: pointer;
-}
-
-.error {
-  display: block;
-  font-family: 'Museo Sans Light', sans-serif;
-  font-weight: 300;
 }
 
 @media (max-width: 768px) {
@@ -373,6 +367,19 @@ img {
   margin-bottom: 33px;
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
+}
+
+.offer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .offer__input {
@@ -704,23 +711,6 @@ img {
       flex-wrap: wrap;
 }
 
-@media (max-width: 1170px) {
-  .price__card:nth-child(even) {
-    margin-left: 30px;
-  }
-  .cards {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (max-width: 814px) {
-  .price__card:nth-child {
-    margin-left: 0 30px;
-  }
-}
-
 .step {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
@@ -765,8 +755,6 @@ img {
   font-size: 14px;
   max-width: 160px;
   margin: auto;
-  font-family: 'Museo Sans Light', sans-serif;
-  font-weight: 300;
 }
 
 .steps__title {
@@ -854,7 +842,6 @@ img {
 .brif__input {
   width: 100%;
   max-width: 370px;
-  margin: auto;
   margin-bottom: 7px;
   margin-top: 7px;
 }
@@ -864,7 +851,6 @@ img {
   height: 70px;
   width: 100%;
   max-width: 370px;
-  margin: auto;
   margin-top: 15px;
   margin-bottom: 30px;
 }
@@ -919,7 +905,6 @@ img {
 
 .interview-list__text {
   max-width: 400px;
-  width: 70%;
 }
 
 .form__title {
@@ -947,7 +932,6 @@ img {
 @media (max-width: 1200px) {
   .brif__form {
     padding-left: 30px;
-    padding-right: 30px;
   }
   .interview {
     padding-right: 30px;
@@ -960,7 +944,7 @@ img {
     margin-bottom: 30px;
   }
   .interview-list__text {
-    font-size: 14px;
+    font-size: 14pxs;
     max-width: 300px;
   }
   .interview-list__counter {
@@ -975,17 +959,11 @@ img {
   }
 }
 
-@media (max-width: 900px) {
-  .brif {
-    background-size: 50%, cover;
-  }
-}
-
 @media (max-width: 768px) {
   .brif {
     background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 47%, cover;
+    background-size: 100% 50%, cover;
     background-repeat: repeat-x, no-repeat;
   }
   .brif-block {
